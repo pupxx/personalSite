@@ -1,0 +1,379 @@
+/*=============================
+Main for Cheryln Barber Assignment
+=============================*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+===============================
+Grid
+===============================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body{
+	background: #deeaee;
+  height: 100%;
+}
+
+.container {
+	background: radial-gradient (#b1cbbb, #eea29a);
+	width: 100%;
+	margin: 0 auto;
+  overflow: hidden;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 35px;
+}
+
+
+
+.row {
+	width: 100%;
+	margin-top: 30px;
+  min-height: 420px;
+}
+
+/*
+==================================
+Header Styles
+===================================
+*/
+
+.canadian-flag {
+  height: 170px;
+  width: inherit;
+  position: relative;
+  }
+
+.canadian-flag:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../Images/canadian-flag-1229484_1920_copy.jpg") 15% 47% no-repeat;
+    /*background: red;*/
+    width: 100%;
+    height: 100%;
+    opacity : 0.2;
+    z-index: -1;
+}
+
+.canadian-flag h1 {
+	font-family: "caveat", cursive;
+	font-weight: 700;
+	position: absolute;
+	left: 285px;
+	bottom: 0;
+}
+
+
+/*
+==================================
+Main Content Styles
+===================================
+*/
+
+.box h1,
+.box h4 {
+	color: #c94c4c;
+}
+
+
+.row h1,
+.row h5 {
+	text-align: center;
+}
+
+.glad,
+.happy {
+	text-decoration: line-through;
+}
+
+.box {
+  border-radius: 7%;
+  float: left;
+  padding: 20px;
+  margin: 5% 0 5% 6%;
+  width: 23%;
+  height: 300px;
+  background-color: #b1cbbb;
+  box-shadow: 5px 5px 10px;
+  color: #000;
+  overflow: hidden;
+}
+
+
+.box:hover
+ {
+  margin-top: 4%;
+  box-shadow: 10px 12px 25px;
+}
+
+.box .heading {
+  margin-bottom: 25px;
+}
+.basics {
+  margin-left: 9%;
+}
+
+.heading {
+  margin-bottom: 5px;
+  width: 100%;
+  height: 37%;
+  overflow: hidden;
+}
+
+.gifContainer {
+  height: 200px;
+  width: auto;
+  display: inline-block;
+  /*margin-left: 35%;*/
+}
+
+/*.container .heading p {
+  font-size: 22px;
+}*/
+
+
+/*=====================================
+Positioning
+=====================================*/
+
+.my_pic {
+  position: absolute;
+  top: 50px;
+  left: 60px;
+}
+
+
+
+/*
+================================
+Typography
+================================
+*/
+
+h1 {
+	font-size: 45px;
+	line-height: 48px;
+	margin-bottom: 30px;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 44px;
+}
+
+h3 {
+	font-size: 21px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+p {
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 22px;
+
+}
+
+
+/*
+================================
+Links
+================================
+*/
+
+a {
+	color: #b1cbbb;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #deeaee;
+}
+
+.recipe_site {
+	color: #c94c4c;
+}
+/*
+================================
+iframes
+================================
+*/
+
+iframe {
+	width: 450px;
+  height: 300px;
+	display: block;
+	margin: 10px auto;
+	border: 2px solid;
+}
+
+.kermit {
+
+  width: 300px;
+  height: 170px;
+}
+
+
+
+/*
+========================================
+Navigation Styles
+========================================
+*/
+.nav {
+	height: 35px;
+	/*width: 960px;*/
+  background: linear-gradient(#eea29a, #c94c4c);
+	background: #c94c4c;
+  border: 1px solid #000000;
+  color: #fff;
+}
+
+.primary_nav {
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+.nav,
+.primary_nav {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: right;
+	color: #b1cbbb;
+	font-weight: 700;
+	text-shadow: 1px 2px 2px #000000;
+	text-transform: uppercase;
+}
+
+nav li {
+	display: inline-block;
+	padding: 5px 5px;
+	vertical-align: top;
+}
+
+nav li:last-child {
+	margin-right: 40px;
+}
+
+.primary-footer {
+  width: 100%;
+	margin: 0;
+	position: fixed;
+  bottom: 0;
+}
+
+/*
+========================================
+Table Styles
+========================================
+*/
+
+table {
+	/*width: 100%;*/
+	margin-bottom: 30px;
+	margin-top: 5px;
+	font-size: 15px;
+  display: inline-block;
+
+}
+
+th,
+td {
+	text-align: left;
+	vertical-align: top;
+  padding-left: 10px;
+}
+
+/*
+========================================
+pics
+========================================
+*/
+.my_pic {
+	background: url("../Images/mypic.jpg") no-repeat 0% 20%;
+  border-radius: 50%;
+	width: 210px;
+  height: 210px;
+	box-shadow: 10px 10px 20px #404040;
+}
+
+.home_pics {
+	width: 300px;
+	margin: 10px;
+}
+
+img {
+	border: 2px solid;
+  border-radius: 5px;
+}
+
+.interestPics {
+  width: 200px;
+  margin: 20px;
+}
+
+
+/*==========================================
+Page Styles
+==========================================*/
+
+.pageInfo {
+  text-align: center;
+  padding: 0 200px;
+}
